@@ -51,7 +51,7 @@ client.connect(err => {
 
 app.delete("/delete/:id" , (req, res) =>{
     const id = req.params.id;
-    console.log(req.params.id); 
+    // console.log(req.params.id); 
     loginCollection.deleteOne({_id : ObjectId(id)})
     .then(documents => res.send("send"))
   })
