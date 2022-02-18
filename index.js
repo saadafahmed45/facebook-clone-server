@@ -62,7 +62,7 @@ app.delete("/delete/:id" , (req, res) =>{
 
 
 app.get('/', (req, res) => {
-  res.send('Facebook Clone')
+  res.send('Facebook Clone-server')
 })
 
 app.listen(port)
